@@ -15,20 +15,6 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/perfil",
-    component: () => import("../layouts/PerfilAuth"),
-    meta: {
-      requiresAuth: true,
-    },
-    children: [
-      {
-        path: "/perfil",
-        name: "Perfil",
-        component: Perfil,
-      },
-    ],
-  },
-  {
     path: "/",
     component: () => import("../layouts/Default"),
     children: [
@@ -65,6 +51,20 @@ const routes = [
       {
         path: "/perfil",
         name: "perfil",
+        component: Perfil,
+      },
+    ],
+  },
+  {
+    path: "/",
+    component: () => import("../layouts/PerfilAuth"),
+    meta: {
+      requiresAuth: true,
+    },
+    children: [
+      {
+        path: "/perfil",
+        name: "Perfil",
         component: Perfil,
       },
     ],
