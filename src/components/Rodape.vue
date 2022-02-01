@@ -8,7 +8,12 @@
 
         <v-spacer></v-spacer>
 
-        <v-btn class="mx-4" dark icon href="https://www.github.com">
+        <v-btn
+          class="mx-4"
+          dark
+          icon
+          href="https://github.com/GoldenMovies/gOlden-Movies"
+        >
           <v-icon large>mdi-github</v-icon>
         </v-btn>
       </v-card-title>
